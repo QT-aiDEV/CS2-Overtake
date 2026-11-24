@@ -1,0 +1,172 @@
+{
+  "source": "RoadToolsPassing/evidence/production-finish-20261004/final-fixture.log",
+  "sha256": "5969BC9688A8DD6FCD885A2D7166C2B78F0C96CC4DFEC754262127C5AB6DE6ED",
+  "stationConvention": "World X relative to leader, as longitudinal proxy. Supplied equal body lengths let root deltas also serve as front deltas.",
+  "queues": [
+    {
+      "followers": 1,
+      "sourceLine": 41854,
+      "leaderDisplayKmh": 47.80001,
+      "stations": [
+        -16.149
+      ],
+      "displayKmh": [
+        47.0483971
+      ],
+      "physicalEntries": 1,
+      "physicalReturns": 1,
+      "physicalPeak": 1,
+      "launchOpportunityFrames": [
+        0
+      ]
+    },
+    {
+      "followers": 2,
+      "sourceLine": 43771,
+      "leaderDisplayKmh": 49.572094,
+      "stations": [
+        -21.24609,
+        -36.42529
+      ],
+      "displayKmh": [
+        46.777504,
+        46.4175949
+      ],
+      "physicalEntries": 2,
+      "physicalReturns": 2,
+      "physicalPeak": 2,
+      "launchOpportunityFrames": [
+        0,
+        0
+      ]
+    },
+    {
+      "followers": 5,
+      "sourceLine": 45826,
+      "leaderDisplayKmh": 47.8000145,
+      "stations": [
+        -14.66333,
+        -30.29883,
+        -43.82276,
+        -59.10059,
+        -75.30371
+      ],
+      "displayKmh": [
+        47.1461449,
+        46.40282,
+        45.965332,
+        45.6756668,
+        45.9058876
+      ],
+      "physicalEntries": 5,
+      "physicalReturns": 5,
+      "physicalPeak": 3,
+      "launchOpportunityFrames": [
+        0,
+        0,
+        0,
+        304,
+        480
+      ]
+    },
+    {
+      "followers": 10,
+      "sourceLine": 39228,
+      "leaderDisplayKmh": 49.572094,
+      "stations": [
+        -20.624,
+        -37.20856,
+        -52.33454,
+        -69.171,
+        -83.69733,
+        -99.989,
+        -116.23053,
+        -131.06159,
+        -148.18952,
+        -170.237
+      ],
+      "displayKmh": [
+        47.0447731,
+        46.6151047,
+        46.1929245,
+        46.04556,
+        46.3607559,
+        46.47904,
+        46.5931625,
+        46.8144531,
+        47.0711632,
+        47.56588
+      ],
+      "physicalEntries": 5,
+      "physicalReturns": 5,
+      "physicalPeak": 3,
+      "launchOpportunityFrames": [
+        0,
+        0,
+        0,
+        320,
+        496
+      ]
+    },
+    {
+      "followers": 20,
+      "sourceLine": 48533,
+      "leaderDisplayKmh": 49.5721,
+      "stations": [
+        -15.8516,
+        -29.4106,
+        -45.52295,
+        -59.9043,
+        -75.66504,
+        -98.72412,
+        -113.20703,
+        -130.75097,
+        -146.7306,
+        -163.60205,
+        -181.62402,
+        -197.0293,
+        -214.7373,
+        -231.4076,
+        -248.6026,
+        -266.9956,
+        -283.43213,
+        -301.30127,
+        -319.14502,
+        -336.1256
+      ],
+      "displayKmh": [
+        48.5367432,
+        47.8664436,
+        47.53534,
+        47.392128,
+        47.09657,
+        46.33063,
+        46.6677361,
+        47.06661,
+        47.8493042,
+        48.27464,
+        48.7868652,
+        49.31391,
+        49.651947,
+        50.4740372,
+        50.912735,
+        53.3863831,
+        54.2539558,
+        54.98742,
+        55.72489,
+        56.5674553
+      ],
+      "physicalEntries": 6,
+      "physicalReturns": 6,
+      "physicalPeak": 3,
+      "launchOpportunityFrames": [
+        0,
+        0,
+        0,
+        304,
+        480,
+        720
+      ]
+    }
+  ]
+}

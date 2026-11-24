@@ -1,0 +1,161 @@
+{
+  "fidelity": 1,
+  "provenance": "Constructed independent decision inputs. Road lengths are native world metres; display speed converts only at fixture boundary. Native topology discovery and movement are not simulated.",
+  "scenarios": [
+    {
+      "name": "straight-clear-0",
+      "followers": 0,
+      "roadMetres": 2000,
+      "leaderDisplayKmh": 50,
+      "expectedGate": "None"
+    },
+    {
+      "name": "straight-clear-1",
+      "followers": 1,
+      "roadMetres": 2000,
+      "leaderDisplayKmh": 50,
+      "expectedGate": "Green",
+      "minimumScalarFits": 1
+    },
+    {
+      "name": "straight-clear-2",
+      "followers": 2,
+      "roadMetres": 2000,
+      "leaderDisplayKmh": 50,
+      "expectedGate": "Green",
+      "minimumScalarFits": 2
+    },
+    {
+      "name": "straight-clear-5",
+      "followers": 5,
+      "roadMetres": 2000,
+      "leaderDisplayKmh": 50,
+      "expectedGate": "Green",
+      "minimumScalarFits": 5
+    },
+    {
+      "name": "straight-clear-10",
+      "followers": 10,
+      "roadMetres": 2000,
+      "leaderDisplayKmh": 50,
+      "expectedGate": "Green",
+      "minimumScalarFits": 10
+    },
+    {
+      "name": "straight-clear-20",
+      "followers": 20,
+      "roadMetres": 2000,
+      "leaderDisplayKmh": 50,
+      "expectedGate": "Green",
+      "minimumScalarFits": 10
+    },
+    {
+      "name": "single-oncoming-conflict",
+      "followers": 10,
+      "oncomingMetres": 50,
+      "expectedGate": "Red"
+    },
+    {
+      "name": "opposing-flow",
+      "followers": 10,
+      "oncomingMetres": 50,
+      "opposingDistances": [
+        50,
+        120,
+        250,
+        450
+      ],
+      "expectedGate": "Red"
+    },
+    {
+      "name": "clear-800m-regression",
+      "followers": 10,
+      "roadMetres": 800,
+      "expectedGate": "Green",
+      "maximumScalarFits": 0
+    },
+    {
+      "name": "no-passing-boundary",
+      "followers": 10,
+      "roadMetres": 0,
+      "coverage": "StructuralBoundary",
+      "expectedGate": "Purple"
+    },
+    {
+      "name": "pending-continuation",
+      "followers": 10,
+      "roadMetres": 200,
+      "coverage": "Pending",
+      "expectedGate": "Red"
+    },
+    {
+      "name": "short-but-valid-road",
+      "followers": 5,
+      "roadMetres": 10,
+      "coverage": "StructuralBoundary",
+      "expectedGate": "Purple"
+    },
+    {
+      "name": "incapable-front-follower",
+      "followers": 10,
+      "capabilityMetresPerSecond": 10,
+      "expectedGate": "Green",
+      "maximumScalarFits": 0
+    },
+    {
+      "name": "blocked-return",
+      "followers": 5,
+      "returnGapMetres": -5,
+      "returnRelativeSpeed": 10,
+      "expectedGate": "Green",
+      "expectedPureReturn": false
+    },
+    {
+      "name": "closing-return-gap",
+      "followers": 5,
+      "returnGapMetres": 10,
+      "returnRelativeSpeed": -10,
+      "expectedGate": "Green",
+      "expectedPureReturn": false
+    },
+    {
+      "name": "stationary-package-return",
+      "followers": 5,
+      "returnProgress": 0,
+      "expectedGate": "Green",
+      "expectedPureReturn": false
+    },
+    {
+      "name": "long-package",
+      "followers": 10,
+      "bodyLength": 63,
+      "expectedGate": "Green"
+    },
+    {
+      "name": "gentle-curve",
+      "followers": 10,
+      "geometryProfile": "gentle-curve",
+      "expectedGate": "Green"
+    },
+    {
+      "name": "gentle-hill",
+      "followers": 10,
+      "geometryProfile": "hill",
+      "expectedGate": "Green"
+    },
+    {
+      "name": "native-segment-seam",
+      "followers": 10,
+      "geometryProfile": "segments",
+      "expectedGate": "Green"
+    },
+    {
+      "name": "native-no-passing-section",
+      "followers": 10,
+      "geometryProfile": "no-passing",
+      "coverage": "StructuralBoundary",
+      "expectedGate": "Purple",
+      "verifiedRoadMetres": 0
+    }
+  ]
+}

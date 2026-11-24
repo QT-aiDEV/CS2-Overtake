@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><TargetFramework>net472</TargetFramework><LangVersion>latest</LangVersion><AssemblyName>Overtake</AssemblyName><Version>0.1.7</Version><TreatWarningsAsErrors>true</TreatWarningsAsErrors><ManagedPath Condition="'$(ManagedPath)' == ''">$(CS2_MANAGED_PATH)</ManagedPath></PropertyGroup>
+ <PropertyGroup Condition="'$(Configuration)' == 'Release'"><DebugType>none</DebugType><DebugSymbols>false</DebugSymbols></PropertyGroup>
+ <PropertyGroup><IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion></PropertyGroup>
+ <Target Name="RequireGameAssemblies" BeforeTargets="ResolveReferences" Condition="!Exists('$(ManagedPath)/Game.dll')"><Error Text="Set CS2_MANAGED_PATH to the installed Cities2_Data/Managed directory." /></Target>
+ <ItemGroup><Reference Include="Game;Unity.Burst;Unity.Entities;Unity.Collections;Unity.Mathematics;UnityEngine.CoreModule;Colossal.Core;Colossal.Mathematics;Colossal.Logging;Colossal.IO.AssetDatabase;Colossal.Localization;Colossal.UI.Binding;Colossal.UI"><HintPath>$(ManagedPath)/%(Identity).dll</HintPath><Private>false</Private></Reference><PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" /></ItemGroup>
+</Project>

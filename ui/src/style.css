@@ -1,0 +1,46 @@
+.passing-controls-content { padding: 14rem 16rem; font-size: 14rem; }
+.passing-controls-content p { white-space: normal; margin: 6rem 0; line-height: 1.35; }
+.passing-status { padding-bottom: 12rem; }
+.passing-gate-header { display: flex; align-items: center; margin-bottom: 7rem; }
+.passing-lights { display: flex; align-items: center; padding: 5rem 6rem; background-color: rgba(0,0,0,.35); border-radius: 5rem; margin-right: 8rem; }
+.passing-lamp { width: 11rem; height: 11rem; border-radius: 50%; margin: 0 3rem; background-color: rgba(255,255,255,.12); }
+.passing-lights-red .passing-lamp-red { background-color: #f07870; }
+.passing-lights-yellow .passing-lamp-yellow { background-color: #f4ce68; }
+.passing-lights-green .passing-lamp-green { background-color: #66d9a0; }
+.passing-gate-name { font-size: 16rem; }
+.passing-gate-red { color: #f07870; }
+.passing-gate-yellow { color: #f4ce68; }
+.passing-gate-green { color: #66d9a0; }
+.passing-status-title { font-size: 16rem; font-weight: bold; }
+.passing-counts { display: flex; margin: 12rem 0; padding: 8rem 0; border-top: 1rem solid rgba(255,255,255,.1); border-bottom: 1rem solid rgba(255,255,255,.1); }
+.passing-counts > div { flex: 1 1 0; display: flex; flex-direction: column; padding: 4rem; text-align: center; border-right: 1rem solid rgba(255,255,255,.1); }
+.passing-counts > div:last-child { border-right-width: 0; }
+.passing-counts strong { font-size: 22rem; }
+.passing-counts span { font-size: 13rem; opacity: .8; margin-top: 3rem; }
+.passing-note { font-size: 12rem; opacity: .8; }
+.passing-actions { padding: 12rem 0; border-top: 1rem solid rgba(255,255,255,.12); }
+.passing-controls-content button.passing-master, .passing-controls-content button.passing-radar { min-width: 58rem; min-height: 30rem; padding: 5rem 10rem; font-size: 13rem; }
+/* The native primary theme is always green. OFF uses the native default theme. */
+.passing-controls-content button.passing-master[aria-pressed="false"] { background-image: none; background-color: rgba(255,255,255,.07); border-color: rgba(255,255,255,.16); color: rgba(255,255,255,.85) !important; }
+.passing-controls-content button.passing-master[aria-pressed="false"]:hover { background-image: none; background-color: rgba(255,255,255,.14); border-color: rgba(255,255,255,.3); color: #fff !important; }
+.passing-controls-content button.passing-details-toggle { width: 100%; margin: 4rem 0; min-height: 32rem; }
+.passing-reason { margin-bottom: 10rem !important; }
+.passing-lights-purple .passing-lamp-purple { background-color: #c99aef; }
+.passing-gate-purple { color: #c99aef; }
+.passing-details { padding-top: 6rem; border-top: 1rem solid rgba(255,255,255,.12); }
+.passing-controls-content button.passing-secondary { background-color: rgba(255,255,255,.07); border: 1rem solid rgba(255,255,255,.16); color: rgba(255,255,255,.85) !important; }
+.passing-controls-content button.passing-secondary:hover { background-color: rgba(255,255,255,.14); border-color: rgba(255,255,255,.3); color: #fff !important; }
+.passing-controls-content button.passing-secondary.selected { background-color: rgba(255,255,255,.11); border-color: rgba(255,255,255,.25); color: #fff !important; }
+.passing-controls-content button.passing-secondary.selected:hover { background-color: rgba(255,255,255,.17); border-color: rgba(255,255,255,.35); color: #fff !important; }
+/* Native default buttons use dark labels; these controls sit on a dark panel. */
+.passing-controls-content button.passing-secondary.focused,
+.passing-controls-content button.passing-secondary:active,
+.passing-controls-content button.passing-secondary.selected.focused,
+.passing-controls-content button.passing-secondary.selected:active,
+.passing-controls-content button.passing-master[aria-pressed="false"].focused,
+.passing-controls-content button.passing-master[aria-pressed="false"]:active { color: #fff !important; }
+.passing-legend { font-size: 13rem; opacity: .7; }
+.passing-controls-row { display: flex; }
+/* Use the selected-info panel's native tabIcon dimensions and Tab padding. */
+.passing-tab-glyph { display: block; background-color: transparent !important; fill: var(--textColorDimmer); }
+.selected .passing-tab-glyph { fill: var(--commonWhite); }
